@@ -25,9 +25,30 @@ h4 {
   padding: 1em;
   border: .3em solid;
   border-radius: 1em;
-  background-color: #ff6b00;
+  background-color: #f2e7e7;
   text-align: center;
   z-index: 3;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 38px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -19px;
+	margin-bottom: -38px;
 }
 
 
@@ -72,8 +93,6 @@ background-color: #f2e7e7;
   margin: auto;
   animation: shake .45s infinite;
 }
-
-
 
 .container {
   position: relative;
@@ -324,20 +343,19 @@ background-color: #f2e7e7;
     letter-spacing: .1em; /* Adjust as needed */
     overflow-wrap: break-word; 
     padding: 1em;
-    padding-right: 0;
+    padding-right: 1em;
     animation: 
       typing 1s steps(30, end),
       blink-caret .75s step-end infinite;
   }
 
-  .typewriter2 h1 {
+  .typewriter h4 {
     display: none;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
     overflow-wrap: break-word; 
     padding: 1em;
-    padding-right: 0;
     animation: 
       typing 2s steps(30, end),
       blink-caret .75s step-end infinite;
