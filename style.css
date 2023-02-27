@@ -188,11 +188,6 @@ background-color: #f2e7e7;
         display: flex;
         z-index: 2;
       }
-  
-      .typewriter h1 {
-        display: block! important;
-        z-index: 1;
-      }
 
       h4 {
         display: none; 
